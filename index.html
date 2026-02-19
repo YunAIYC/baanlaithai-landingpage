@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Baan Lai Lai Thai | Wellness & Massage Hamburg</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,500;1,300&family=Montserrat:wght@200;400&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary: #2D3E32; /* Deep Thai Forest Green */
+            --accent: #C5A059; /* Silken Gold */
+            --bg: #F9F7F2;    /* Soft Parchment */
+            --text: #1A1A1A;
+            --font-display: 'Cormorant Garamond', serif;
+            --font-body: 'Montserrat', sans-serif;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: var(--bg);
+            color: var(--text);
+            font-family: var(--font-body);
+            overflow-x: hidden;
+            line-height: 1.6;
+        }
+
+        /* Hero Section */
+        header {
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+            background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url('baanlai-wellness-bg.png');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            color: white;
+            text-align: center;
+        }
+
+        .hero-content {
+            z-index: 10;
+            padding: 2rem;
+        }
+
+        .hero-content h1 {
+            font-family: var(--font-display);
+            font-size: clamp(3rem, 8vw, 6rem);
+            font-weight: 300;
+            font-style: italic;
+            margin-bottom: 1rem;
+            letter-spacing: 0.05em;
+        }
+
+        .hero-content p {
+            font-size: 1.2rem;
+            letter-spacing: 0.3em;
+            text-transform: uppercase;
+            font-weight: 200;
+        }
+
+        /* Content Sections */
+        .section-intro {
+            padding: 8rem 2rem;
+            max-width: 900px;
+            margin: 0 auto;
+            text-align: center;
+        }
+
+        .section-intro h2 {
+            font-family: var(--font-display);
+            font-size: 3rem;
+            color: var(--primary);
+            margin-bottom: 2rem;
+        }
+
+        .gold-line {
+            width: 80px;
+            height: 1px;
+            background: var(--accent);
+            margin: 2rem auto;
+        }
+
+        .grid-massage {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            padding: 4rem 2rem;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .massage-card {
+            background: white;
+            padding: 3rem;
+            border: 1px solid #EAEAEA;
+            transition: all 0.5s ease;
+            position: relative;
+        }
+
+        .massage-card:hover {
+            border-color: var(--accent);
+            transform: translateY(-10px);
+        }
+
+        .massage-card h3 {
+            font-family: var(--font-display);
+            font-size: 1.8rem;
+            margin-bottom: 1rem;
+            color: var(--primary);
+        }
+
+        .price {
+            color: var(--accent);
+            font-weight: 400;
+            display: block;
+            margin-top: 1.5rem;
+            letter-spacing: 0.1em;
+        }
+
+        /* Decorative Elements */
+        .thai-pattern {
+            position: absolute;
+            bottom: 0;
+            right: 0;
+            width: 300px;
+            opacity: 0.05;
+            pointer-events: none;
+        }
+
+        /* Footer */
+        footer {
+            background: var(--primary);
+            color: white;
+            padding: 6rem 2rem;
+            text-align: center;
+        }
+
+        .footer-logo {
+            font-family: var(--font-display);
+            font-size: 2.5rem;
+            margin-bottom: 2rem;
+            font-style: italic;
+        }
+
+        .booking-btn {
+            display: inline-block;
+            padding: 1rem 3rem;
+            background: var(--accent);
+            color: white;
+            text-decoration: none;
+            text-transform: uppercase;
+            letter-spacing: 0.2em;
+            font-size: 0.8rem;
+            transition: background 0.3s;
+            margin-top: 2rem;
+        }
+
+        .booking-btn:hover {
+            background: #B48E47;
+        }
+
+        @media (max-width: 768px) {
+            .section-intro h2 { font-size: 2.2rem; }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="hero-content">
+            <h1>Baan Lai Lai</h1>
+            <p>Traditional Thai Wellness</p>
+        </div>
+    </header>
+
+    <section class="section-intro">
+        <h2>Entspannung in Hamburg</h2>
+        <div class="gold-line"></div>
+        <p>Tauchen Sie ein in eine Welt der Ruhe. Im Herzen von Hamburg bieten wir Ihnen traditionelle thailändische Heilkunst, die Körper und Geist in Einklang bringt.</p>
+    </section>
+
+    <section style="background: #fdfdfd;">
+        <div class="grid-massage">
+            <div class="massage-card">
+                <h3>Traditional Thai</h3>
+                <p>Kraftvolle Akupressur und sanftes Dehnen für neue Energie und Beweglichkeit.</p>
+                <span class="price">60 MIN / 65 €</span>
+            </div>
+            <div class="massage-card">
+                <h3>Aroma Oil</h3>
+                <p>Sanfte Entspannung mit hochwertigen ätherischen Ölen für tiefe Regeneration.</p>
+                <span class="price">60 MIN / 75 €</span>
+            </div>
+            <div class="massage-card">
+                <h3>Hot Stone</h3>
+                <p>Gezielte Wärme und fließende Bewegungen lösen tiefsitzende Verspannungen.</p>
+                <span class="price">90 MIN / 95 €</span>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-logo">Baan Lai Lai</div>
+        <p>Hoheluftchaussee 120, 20253 Hamburg</p>
+        <p>Mo - Sa: 10:00 - 20:00 Uhr</p>
+        <a href="#" class="booking-btn">Termin vereinbaren</a>
+        <div style="margin-top: 4rem; opacity: 0.5; font-size: 0.7rem;">&copy; 2026 Baan Lai Lai Thai Massage</div>
+    </footer>
+
+</body>
+</html>
